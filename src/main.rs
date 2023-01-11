@@ -18,11 +18,6 @@ struct Arguments {
 }
 
 impl Arguments {
-    // 0      1
-    // name adddr
-
-    // 0     1 2   3
-    // name -j 100 adddr
     fn new(args: &[String]) -> Result<Arguments, &'static str> {
         if args.len() < 2 {
             return Err("not enough argument");
